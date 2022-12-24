@@ -1,0 +1,109 @@
+.sign_logo {
+    padding-top: 40px;
+    margin-bottom: 60px;
+}
+
+.sign_form {
+    margin-top: 45px;
+}
+//=================================== Inputs, icons =======================================
+
+.input__icon {
+    position: relative;
+        
+    &:before {
+      content: '';
+      position: absolute;
+      
+      left: 20px;
+      margin: auto 0;
+      width: 25px;
+      height: 25px;      
+      background-size: cover;
+      margin-bottom: 25px;
+    }
+    
+    & .input {
+        padding-left: 60px;
+        width: 78%;        
+    }
+}
+.input__profile {
+    &:before {
+        background: url('../icons/Profile.png') no-repeat;        
+    }
+}
+.input__message {
+    &:before {
+        background: url('../icons/Message.png') no-repeat;        
+    }
+}
+.input__lock {
+    width: 100%;
+    height: 57px;
+    border-radius: 15px;
+    border: none;   
+
+    &:before {
+        background: url('../icons/Lock.png') no-repeat;
+        margin-bottom: 13px;
+    }
+}
+.input__lock_group {
+    height: 57px;
+    border-radius: 15px;
+    border: none;
+    background-color: #fff;
+}
+.button__eye {
+    background: url('../icons/Show.png') no-repeat;
+    height: 100%;
+    border-radius: 15px;
+    border: none;
+    margin-top: 15px;
+    padding-right: 35px;    
+}
+
+.icon-group {    
+    border-radius: 15px;
+    border: none;
+    background-color: #fff;
+    width: 40%;
+    padding: 15px -10px 15px 15px;
+    margin-left: auto;
+    margin-right: auto;    
+    height: 57px;
+}
+
+.icon {
+    width: 25px;
+    height: 25px;
+    margin-right: 10px;
+}
+
+.checkbox__group {
+    margin-top: 20px;
+}
+
+.checkbox__green {
+    background: linear-gradient(to top, rgba(83, 232, 139, 1), rgba(21, 190, 119, 1));
+    border: none;
+    border-radius: 50%;
+    position: relative; 
+    margin-left: 25px;
+    
+
+    &:checked {
+        border: none;       
+        
+    }
+}
+//================================================================================================
+
+.sign_text {        
+    margin-left: 30%;    
+}
+
+.sign_button {
+    margin-bottom: 20px;
+}

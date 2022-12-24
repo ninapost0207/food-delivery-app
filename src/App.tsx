@@ -1,26 +1,27 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { Route, Routes } from 'react-router-dom'
+import { SignInPage } from './templates/pages/SignInPage'
+import { SignUpPage } from './templates/pages/SignUpPage'
+import { SearchDishPage } from './templates/pages/SearchDishPage'
+import { SearchRestaurantPage } from './templates/pages/SearchRestaurentPage'
+import { MainPage } from './templates/pages/MainPage'
+import { BioPage } from './templates/pages/BioPage'
+import { PaymentMethodPage } from './templates/pages/PaymentMethodPage'
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    return (
+        <>            
+            <Routes>
+                <Route path="/" element={<MainPage />} />                
+                <Route path="/searchdish" element={<SearchDishPage />} />
+                <Route path="/searchrestaurant" element={<SearchRestaurantPage />} />
+                <Route path="/signin" element={<SignInPage />} />
+                <Route path="/signup" element={<SignUpPage />} />
+                <Route path="/bio" element={<BioPage />} />
+                <Route path="/payment" element={<PaymentMethodPage />} />
+            </Routes>
+        </>
+        
+    )
 }
 
 export default App;
