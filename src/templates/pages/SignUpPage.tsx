@@ -37,7 +37,6 @@ export function SignUpPage () {
         setNewuser({ ...newuser, [event.currentTarget.name]: event.currentTarget.value });
     };
 
-    
     const handleClick = (e: React.ChangeEvent<HTMLInputElement>) => {    
         const checkbox =  document.getElementById(e.currentTarget.id) as HTMLInputElement        
         checkbox.checked ? setNewuser({...newuser, [e.target.name]: true}) : setNewuser({...newuser, [e.target.name]: false})
