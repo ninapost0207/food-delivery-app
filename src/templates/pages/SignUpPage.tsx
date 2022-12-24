@@ -7,21 +7,6 @@ import {Button} from '../elements/Button';
 import { Checkbox } from '../elements/Checkbox';
 import { IUser } from '../../models';
 
-const UserData = {
-    title: '',
-    price: 13.5,
-    description: 'lorem ipsum set',
-    image: 'https://i.pravatar.cc',
-    category: 'electronic',
-    rating: {
-        rate: 42,
-        count: 10
-    }
-}
-
-interface CreateUserProps {
-    onCreate: (product: IUser) => void
-}
 
 export function SignUpPage () {
     const [newuser, setNewuser] = useState({
@@ -36,7 +21,7 @@ export function SignUpPage () {
 
     async function addUser() {        
         try {            
-            const response = await axios.post<IUser>('https://jsonplaceholder.typicode.com/users/posts')            
+            const response = await axios.post<IUser>('https://jsonplaceholder.typicode.com/users/posts')      //another url needed!!!      
             console.log('SUCCESS!!!', response.data) 
             
         } catch(e:unknown) {
