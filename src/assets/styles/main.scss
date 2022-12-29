@@ -1,11 +1,17 @@
+@import url('./fonts.scss');
+
 body {
     margin: 0 auto;
     box-sizing: border-box;
+    height: calc(100vh - 50px);
 }
 .wrapper {
     padding: 25px;
+    height: calc(100vh - 50px);    
 }
 .background__linear {
+    position: relative;
+    height: calc(100vh - 50px);
     padding: 25px;
     background-image:
     linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.25),rgba(255, 255, 255, 0.5),  rgba(244, 244, 244, 0.8) 50% ),
@@ -14,7 +20,8 @@ body {
 
 .background__main {
     padding-top: 305px;
-    padding-bottom: 304px;       
+    padding-bottom: 304px; 
+    height: calc(100vh - 610px);      
 }
 
 a {
@@ -23,6 +30,9 @@ a {
     
 }
 
+.width__70 {
+    max-width: 75%;
+}
 // ============================= Logos and Pictures =================================
 
 .picture__big {
@@ -35,6 +45,13 @@ a {
     height: 203px;
     display: block;
     margin: 0 auto;
+}
+.logo_congrats {
+    width: 172px;
+    height: 162px;
+    display: block;
+    margin: 0 auto;
+    margin-top: 200px;
 }
 //============================== Colors ==============================================
 
@@ -55,38 +72,63 @@ $orange: rgba(218, 99, 23, 1);
 .white {
     color: #ffffff !important;
 }
+ .red {
+    color: red;
+ }
+
 //============================== Headers and texts ===================================
 .header_22 {
     font-size: 22px;
     text-align: center;
-    font-weight: 600;        
+    font-weight: 600;
+    font-family: 'BentonSans_Bold';        
 }
 .header_25 {
     font-size: 25px;    
-    font-weight: 600;        
+    font-weight: 600;
+    font-family: 'BentonSans_Bold';        
+}
+.header_30 {
+    font-size: 30px;    
+    font-weight: 600;
+    font-family: 'BentonSans_Bold';        
 }
 .subheader {
     font-size: 12px;
     font-weight: 600;
     text-align: center;
+    font-family: 'BentonSans_Bold';
 }
 
 .text__12__normal {
     font-size: 12px;    
-    font-weight: 400;  
+    font-weight: 400; 
+    line-height: 22px; 
+    min-width: 60%;
+    font-family: 'BentonSans_Regular';
 }
 .text__14__normal {
     font-size: 14px;    
     font-weight: 400;  
+    font-family: 'BentonSans_Regular';
 }
 
 .text__14__bold {
     font-style: 14px;
     font-weight: 600;
+    font-family: 'BentonSans_Bold';
+}
+
+.text__15__medium {
+    font-size: 15px;    
+    font-weight: 400;  
+    font-family: 'BentonSans_Medium';
 }
 .center {
     text-align: center;
 }
+
+
 //============================= Buttons =================================================
 
 button {
@@ -100,21 +142,29 @@ button {
     height: 57px;    
     background: linear-gradient(to right, rgba(83, 232, 139), rgba(21, 190, 119));  
     display: block; 
-    margin: auto;
-    margin-top: 42px;
-    margin-bottom: 35px;
+    margin-left: 30%;    
+    margin-top: 60px;    
+    font-family: 'BentonSans_Bold';
 }
 
 .button__text {
     color: #ffffff;
-    font-size: 16px;   
+    font-size: 16px;  
+    font-family: 'BentonSans_Bold'; 
 }
 
 .button__light-orange {
     background-color: $light-orange;
     width: 45px;
     height: 45px;
-    
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.button__grey {
+    background-color: #F6F6F6;
+    height: 57px;
+    width: 100%;
 }
 
 // =============================== Inputs =================================================
@@ -127,7 +177,7 @@ button {
     margin-bottom: 10px;
     padding-left: 15px;
     padding-right: 10px;
-    
+    font-family: 'BentonSans_Regular';
 }
 
 .input__icon {

@@ -5,6 +5,7 @@
 
 .sign_form {
     margin-top: 45px;
+    
 }
 //=================================== Inputs, icons =======================================
 
@@ -82,10 +83,10 @@
 }
 
 .checkbox__group {
-    margin-top: 20px;
+    margin-top: 30px;
 }
 
-.checkbox__green {
+input.checkbox__green {
     background: linear-gradient(to top, rgba(83, 232, 139, 1), rgba(21, 190, 119, 1));
     border: none;
     border-radius: 50%;
@@ -102,8 +103,63 @@
 
 .sign_text {        
     margin-left: 30%;    
+    text-decoration: underline;
+    margin-top: 20px;
 }
 
 .sign_button {
     margin-bottom: 20px;
+}
+
+
+.button_with-icon {
+    width: 100%;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    background: white;
+    margin-top: 20px;
+    
+}
+
+.icon_payment {
+    width: fit-content;
+}
+
+.set-location-group {
+    background-color: #fff;
+    border-radius: 22px;
+    padding: 10px;
+    margin-top: 20px;
+}
+.icon_location {
+    width: 33px;
+    height: 33px;
+    margin-right: 15px;
+    margin-top: 8px;
+    margin-bottom: 30px;
+}
+
+input.code-input {
+    font-size: 33px;
+    width: 1em;
+    text-align: center;
+    flex: 1 0 1em;
+    border: none;
+    border-radius: 22px;
+    outline: none;
+    font-family: 'BentonSans_Medium';
+    
+
+    &::placeholder {
+        color: grey;
+        font-size: 50px;
+        margin-top: 30px;
+    }
+}
+
+.code-input__group {
+    width: 100%;
+    height: 103px;
+    border: .2px solid grey;
+    border-radius: 22px;
 }

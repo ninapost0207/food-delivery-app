@@ -1,6 +1,10 @@
 import React from 'react';
 import { Button } from '../elements/Button';
+import { PaymentButton } from '../elements/PaymentButton';
 import { SignUpHeading } from '../elements/SignUpHeading';
+import paypal from '../../assets/icons/paypal.png';
+import visa from '../../assets/icons/Visa.png';
+import payoneer from '../../assets/icons/payoneer.png';
 
 export function PaymentMethodPage () {
     
@@ -10,8 +14,12 @@ export function PaymentMethodPage () {
             <SignUpHeading 
                 link= "/bio" header="Payment Method" text="This data will be displayed in your account profile for security" 
             />
-                
-            <Button link= 'google.com' type= 'submit' text= 'Next' onClick={() => console.log('submitted')}/>
+            <PaymentButton link='/bio' icon={paypal} alt='paypal' type='button' />  
+            <PaymentButton link='/bio' icon={visa} alt='visa' type='button' /> 
+            <PaymentButton link='/bio' icon={payoneer} alt='payoneer' type='button' /> 
+            
+              
+            <Button link= '/upload' type= 'submit' text= 'Next' onClick={() => console.log('submitted')}/>
             
         </div>
     )

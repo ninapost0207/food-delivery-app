@@ -17,7 +17,7 @@ export default function FirstPage ({image, alt, header, text, type, link, button
             <img src={image} alt={alt} className='picture__big'></img>
             <h3 className='header_22'>{header} </h3>
             <p className='text__12__normal'>{text} </p>
-            <Button link={link} type={type} text={buttonText} onClick={() => console.log('work')}/>
+            <Button link={link} type={type} text={buttonText} />
             
         </div> 
       );

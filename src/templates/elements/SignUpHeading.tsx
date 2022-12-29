@@ -9,7 +9,7 @@ interface SignUpHeadingProps {
 
 export function SignUpHeading ({link, header, text}: SignUpHeadingProps) {
     return (
-        <div >
+        <div className='width__70'>
             <Link to={link} >
                 <button className='button__light-orange orange header_25'> &lt;                 
                 </button>

@@ -6,6 +6,10 @@ import { SearchRestaurantPage } from './templates/pages/SearchRestaurentPage'
 import { MainPage } from './templates/pages/MainPage'
 import { BioPage } from './templates/pages/BioPage'
 import { PaymentMethodPage } from './templates/pages/PaymentMethodPage'
+import { UploadPhotoPage } from './templates/pages/UploadPhotoPage'
+import { SetLocationPage } from './templates/pages/SetLocationPage'
+import { CongratsPage } from './templates/pages/CongratsPage'
+import { VerificationCodePage } from './templates/pages/VerificationCodePage'
 
 function App() {
     return (
@@ -18,6 +22,11 @@ function App() {
                 <Route path="/signup" element={<SignUpPage />} />
                 <Route path="/bio" element={<BioPage />} />
                 <Route path="/payment" element={<PaymentMethodPage />} />
+                <Route path="/upload" element={<UploadPhotoPage />} />
+                <Route path="/location" element={<SetLocationPage />} />
+                <Route path="/congrats" element={<CongratsPage />} />
+                <Route path="/verification" element={<VerificationCodePage />} />
+                
             </Routes>
         </>
         
